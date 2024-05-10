@@ -170,6 +170,5 @@ fun VideoDisplay(title: String, likes: Int, videoId: String) {
                     .padding(bottom = 8.dp)
             )
         }
-
     }
 }
