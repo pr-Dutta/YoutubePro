@@ -73,4 +73,5 @@ dependencies {
     implementation("io.ktor:ktor-client-android:2.3.10")
 
     implementation("com.pierfrancescosoffritti.androidyoutubeplayer:chromecast-sender:0.28")
+    //kotlin("plugin.serialization") version "1.9.23"
 }

@@ -11,18 +11,18 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalLifecycleOwner
 import androidx.compose.ui.unit.dp
 
-@Composable
-fun SearchVideo(videos: SnapshotStateList<Video>, searchText: String) {
-
-    LazyColumn(
-        modifier = Modifier
-            .padding(16.dp)
-    ) {
-
-        items(videos) { video ->
-            if (video.title.contains(searchText)) {
-                VideoDisplay(title = video.title, likes = video.likes, videoId = video.videoId)
-            }
-        }
-    }
-}
+//@Composable
+//fun SearchVideo(videos: SnapshotStateList<Video>, searchText: String) {
+//
+//    LazyColumn(
+//        modifier = Modifier
+//            .padding(16.dp)
+//    ) {
+//
+//        items(videos) { video ->
+//            if (video.title.contains(searchText)) {
+//                VideoDisplay(title = video.title, likes = video.likes, videoId = video.videoId)
+//            }
+//        }
+//    }
+//}

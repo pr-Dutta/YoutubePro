@@ -11,4 +11,3 @@ data class Video(
     val channelName: String,
     val videoId: String,
 )
-
