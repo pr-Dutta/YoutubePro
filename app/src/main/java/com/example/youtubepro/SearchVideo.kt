@@ -19,10 +19,10 @@ fun SearchVideo(videos: SnapshotStateList<Video>, searchText: String) {
             .padding(16.dp)
     ) {
 
-        items(videos) { video ->
-            if (video.title.contains(searchText)) {
-                VideoDisplay(title = video.title, likes = video.likes, videoId = video.videoId)
-            }
-        }
+//        items(videos) { video ->
+//            if (video.title.contains(searchText)) {
+//                VideoDisplay(title = video.title, likes = video.likes, videoId = video.videoId)
+//            }
+//        }
     }
 }
