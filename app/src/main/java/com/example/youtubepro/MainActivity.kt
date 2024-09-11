@@ -73,12 +73,12 @@ fun YoutubePro() {
 
     val videos = remember { mutableStateListOf<Video>() }
 
-//    LaunchedEffect(Unit) {
-//        withContext(Dispatchers.IO) {
-//            val results = supabase.from("videos").select().decodeList<Video>()
-//            videos.addAll(results)
-//        }
-//    }
+    LaunchedEffect(Unit) {
+        withContext(Dispatchers.IO) {
+            val results = supabase.from("videos").select().decodeList<Video>()
+            videos.addAll(results)
+        }
+    }
 
     Column(
         modifier = Modifier.fillMaxSize(),
