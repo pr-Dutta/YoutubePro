@@ -1,8 +1,6 @@
 package com.example.youtubepro
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -38,6 +36,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.core.app.ComponentActivity
 import com.example.youtubepro.ui.theme.YoutubeProTheme
 import io.github.jan.supabase.createSupabaseClient
 import io.github.jan.supabase.postgrest.Postgrest
@@ -74,12 +73,12 @@ fun YoutubePro() {
 
     val videos = remember { mutableStateListOf<Video>() }
 
-    LaunchedEffect(Unit) {
-        withContext(Dispatchers.IO) {
-            val results = supabase.from("videos").select().decodeList<Video>()
-            videos.addAll(results)
-        }
-    }
+//    LaunchedEffect(Unit) {
+//        withContext(Dispatchers.IO) {
+//            val results = supabase.from("videos").select().decodeList<Video>()
+//            videos.addAll(results)
+//        }
+//    }
 
     Column(
         modifier = Modifier.fillMaxSize(),
